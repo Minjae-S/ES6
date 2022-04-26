@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var 이름1 = { name: "김" };
+      var 이름2 = 이름1;
+      이름1.name = "박";
+
+      function 변경(obj) {
+        obj.name = "park";
+      }
+      변경(이름1);
+    </script>
+  </body>
+</html>
