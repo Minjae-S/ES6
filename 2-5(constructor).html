@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var 학생1 = {
+        name: "kim",
+        age: 15,
+        sayHi: function () {
+          console.log("안녕하세요" + this.name + "입니다");
+        },
+      };
+
+      function 기계(이름, 나이) {
+        this.name = 이름;
+        this.age = 나이;
+        this.sayHi = function () {
+          console.log("안녕" + this.name + "입니다");
+        };
+      }
+
+      var 학생1 = new 기계("park", "13");
+      var 학생2 = new 기계("kim");
+
+      //   var product1 = { name: "shirts", price: 50000 };
+      //   var product2 = { name: "pants", price: 30000 };
+      function shopping(이름, 가격) {
+        this.name = 이름;
+        this.price = 가격;
+        this.부가세 = function () {
+          console.log(this.price * 0.1);
+        };
+      }
+      var 상품1 = new shopping("반팔", "4");
+      var 상품2 = new shopping("바지", "3333");
+    </script>
+  </body>
+</html>
