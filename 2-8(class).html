@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class 부모 {
+        constructor() {
+          this.name = "kim";
+          this.sayHi = function () {
+            console.log("hello")
+          }
+          sayHi() {
+              console.log('hello') //함수 넣는 두번재 방법
+          }
+        }
+      };
+
+      var 자식 = new 부모();
+
+      자식.__proto__ ;
+      var 자식 = new 부모('ㅇㅇㅇ');
+
+      Object.getPrototypeOf(자식);
+    </script>
+  </body>
+</html>
